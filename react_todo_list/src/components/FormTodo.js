@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+// import "./App.css";
 import { Button, Form} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -14,6 +14,7 @@ function FormTodo({ addTodo }) {
     };
   
     return (
+      <div className="form-group">
       <Form onSubmit={handleSubmit}> 
       <Form.Group>
         <Form.Label><b>Add Todo</b></Form.Label>
@@ -23,6 +24,7 @@ function FormTodo({ addTodo }) {
         Submit
       </Button>
     </Form>
+    </div>
     );
   }
   

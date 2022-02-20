@@ -1,6 +1,11 @@
 .app {
   padding: 30px;
   background-color: floralwhite;
+  width: 70%;
+  margin: 0 auto
+  /* align-items: center;
+  justify-content: center;
+  display:flex; */
 }
 
 .todo {

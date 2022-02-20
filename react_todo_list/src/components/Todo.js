@@ -1,15 +1,12 @@
 import React from "react";
-import ".npm install/App.css";
+// import "./App.css";
 import { Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function Todo({ todo, index, markTodo, removeTodo }) {
   return (
-    <div
-      className="todo"
-      
-    >
+    <div className="todo">
       <span style={{ textDecoration: todo.isDone ? "line-through" : "" }}>{todo.text}</span>
       <div>
         <Button variant="outline-success" onClick={() => markTodo(index)}>✓</Button>{' '}
